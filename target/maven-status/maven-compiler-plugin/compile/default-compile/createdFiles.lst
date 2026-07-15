@@ -1,0 +1,7 @@
+com/tcs/fbs/FbsApplication.class
+com/tcs/fbs/dto/FlightDto.class
+com/tcs/fbs/entity/Flight.class
+com/tcs/fbs/JavaBeanConfig.class
+com/tcs/fbs/service/FlightService.class
+com/tcs/fbs/repository/FlightRepository.class
+com/tcs/fbs/controller/FlightController.class
