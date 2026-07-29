@@ -1,5 +1,7 @@
 package com.tcs.fbs.controller;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +27,11 @@ public class FlightController {
     public String health(){
         return "ok";
     }
-
+    @GetMapping("/host")
+    @ResponseStatus(code = HttpStatus.OK)
+    public String health1() throws UnknownHostException {
+        return InetAddress.getLocalHost().getHostAddress();
+    }
     @PostMapping("/flight")
 	public FlightDto createFlight(@RequestBody FlightDto flightDto) {
 		// FlightService flightService=new FlightService();
